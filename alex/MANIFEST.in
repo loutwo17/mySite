@@ -1,0 +1,4 @@
+graft alex/templates
+graft alex/static
+include alex/schema.sql
+
