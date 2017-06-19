@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!--Title brand -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/static/img/b0510a52fc8aad60-32x32.ico">
+		<!--Alloes me to use font -->
+		<link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+		<title>Alex Loulou</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="/static/css/scrolling-nav.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+		<style>
+
+			body {
+				width: 100%;
+				height: 100%;
+			}
+
+			html {
+				width: 100%;
+				height: 100%;
+			}
+			.back-to-top {
+				cursor: pointer;
+				position: fixed;
+				bottom: 5px;
+				right: 15px;
+				display:none;
+			}
+
+			@media(min-width:767px) {
+				.navbar {
+					padding: 20px 0;
+					-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+					-moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+					transition: background .5s ease-in-out,padding .5s ease-in-out;
+				}
+
+				.top-nav-collapse {
+					padding: 0;
+				}
+			}
+
+			.intro-section {
+				height: 100%;
+				padding-top: 150px;
+				text-align: center;
+				background: #fff;
+
+			}
+
+			.intro-title{
+				background-image: url(static/img/intro.png);
+				background-size: 100%;
+				background-repeat: no-repeat;
+				border: black solid 5px;
+				height: 100%;
+			}
+
+			.intro-name {
+				width: 100%;
+				font-family: 'Revalia', cursive;
+				font-weight: 500;
+				font-size: 130px;
+				color: white;
+				position: absolute;
+				margin-top: 375px;
+				
+			
+			}
+
+			.intro-small-name {
+				font-family: 'Revalia', cursive;
+				text-align: center;
+				font-weight: 500;
+				font-size: 115px;
+				color: black;
+			
+			}
+
+			.about-section {
+				height: 100%;
+				padding-top: 150px;
+				text-align: center;
+				background: #eee;
+			}
+			.education-section {
+				height: 100%;
+				padding-top: 50px;
+				text-align: center;
+				background: #333;
+			}
+			.experience-section {
+				height: 100%;
+				padding-top: 100px;
+				text-align: center;
+				background: #eee;
+			}
+
+			.projects-section {
+				height: 100%;
+				padding-top: 50px;
+				text-align: center;
+				background: #333;
+				
+			}
+			#projects h2{
+				color: white;
+				font-weight:200;
+				font-size: 48px;
+			}
+			#projects h1{
+				color: white;
+				font-weight:400;
+				font-size: 72px;
+				padding-bottom: 40px; 
+			}
+
+
+			.contact-section {
+				height: 100%;
+				padding-top: 20px;
+				text-align: center;
+				background: #333;
+				color: white;
+
+			}
+
+			.about-wrapper {
+				float: left;
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
+			
+			}
+
+			#about-1{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(340deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 2%;
+
+
+			}
+			#about-2{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(2deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 2%;
+
+
+			}
+			#about-3{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(13deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 3%;
+
+
+
+			}
+
+
+			.tech-wrapper{
+
+				width: 100%;
+				height: 350px;
+				padding: 2%;
+				}
+			#tech-img{
+				width: 50%;
+				float: left;
+			}
+			#tech-des{
+				padding: 2%;
+				width: 50%;
+				color: silver;
+				font-weight: 400;
+				text-align: left;
+				float: right;
+			}
+			.dmass-wrapper{
+				width: 100%;
+				height: 350px;
+				padding:2%;
+
+			}
+			#dmass-img{
+				width: 50%;
+				padding-right: 20%;
+				float: right;
+			}
+			#dmass-des{
+				float: left;
+				width: 50%;
+				color: silver;
+				font-weight: 400;
+				text-align: left;
+				padding-left: 10%;
+			}
+
+			.connect-wrapper{
+				background-color: #eee;
+				height: auto;
+				float: left;
+				width: 100%;float: right;
+				
+			}
+
+			.one-third{
+				width: 33%;
+				height: 100%;
+				float: left;
+				text-align: center;
+			}
+
+			.social{
+				list-style-type: none;
+				text-align: center;
+
+					}
+
+			.social li{
+				display: inline;
+			}
+
+			.social i{
+				font-size: 460%;
+				margin: 1%;
+				padding: 2% 5% 2% 5%;
+				color: black;
+			}
+			.social i:hover{
+				color: white;
+			}
+			footer.second{
+				color: black;
+			}
+
+			.cover-bg {
+			  background: 
+			    linear-gradient(
+			      rgba(2, 85, 139, 0.98), 
+			      rgba(2,85, 139,.35)
+			    ),
+			  url(static/img/bg.png) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  color: #fff;
+			  height: 100%;
+			 
+			}
+
+			#anaanu{
+				text-align: center;
+				padding-left: 2%;
+				padding-right: 2%;
+				border: solid #fff 1px;
+				
+			}
+			#nix{
+				text-align: center;
+				border: solid white 1px;
+				background: #1c92d2;  /* fallback for old browsers */
+				background: #43C6AC;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+				color: #fff;
+				padding-left: 2%;
+				padding-right: 2%
+
+
+				
+			}
+			#my{
+				text-align: center;
+				background-color: #333;
+				border: solid white 1px;
+				color: #fff;
+				padding-left: 2%;
+				padding-right: 2%
+
+				
+			}
+
+
+
+
+		</style>
+
+	</head>
+
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!--Image brand -->
+					<a class="navbar-brand page-scroll" href="#page-top" id="logo">
+						<span><img alt="Brand" src="/static/img/trident.png" height="30" width="26"></span> Alex Loulou
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a class="page-scroll" href="#page-top"></a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#about">About</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#education">Education</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#experience">Experience</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#projects">Projects</a>
+						</li>
+						<li>
+							<a class="page-scroll" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
+		<!-- End Nav Bar -->
+
+
+
+
+
+		<!-- Intro Section -->
+		<section id="intro" class="intro-section hidden-xs intro-title">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="intro-name">Alex<br />Loulou</h1>
+					</div>
+				</div>
+			</div>
+		</section>	
+		<!-- for smaller devices -->
+		<section id="intro" class="intro-section hidden-sm hidden-md hidden-lg hidden-xl">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="intro-small-name">Alex<br />Loulou</h1>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End Intro -->
+
+
+
+
+
+
+
+		<!-- About Section -->
+		<section id="about" class="about-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h1>About Me</h1>
+						<p>I am currently attednding Virginia Polytechnic Institute and State University. I am studying to become a computer engineer, right now I am in the summer going into junior year, but by the time you are reading this, I will be sitting in my classes as a junior. I was challenged to create a personal website by a mentor of mine, and a little about me is that I love a good challenge. So I took it upon myself to sum up who I really am and make it into a website. I chose to study computer enginnering because I am enthralled with technology and how we can use it to accomplish anything we truly want.
+						<br />
+						<br />
+						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.</p>
+						<br />
+						<br />
+						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.Blah blah blah</p>
+
+						<div class="about-wrapper">
+							<img id="about-1" src="/static/img/me1.png">
+
+							<img id="about-2" src="/static/img/me2.png">
+
+							<img id="about-3" src="/static/img/aboutme.png">
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- End about section -->
+
+		<!--Education section -->
+		<section id="education" class="education-section" style="color: silver;">
+				
+			<h1 style="color: silver;">Education</h1>
+			<p>Undergraduate GPA: 3.4/4</p>
+			<p><a class="btn btn-lg btn-warning" href="http://vt.edu" role="button">Virginia Tech</a></p>
+				
+				<div class=tech-wrapper>
+					<div id="tech-img">
+						<img src="static/img/VT_LOGO.png">
+					</div>
+
+					<div id="tech-des">
+						<h2 style="color: silver;">Virginia Polytechnic Institute and State University</h2>
+						<h3 style="color: silver;">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
+						<h4 style="color: silver;"> Aug 2015-May 2019</h4>
+						<h5 style="color: silver;">Member of Pi Lambda Phi</h5>
+						
+
+					</div>
+				</div>
+
+				
+				
+				
+
+				<div class=dmass-wrapper>
+
+					<div id="dmass-img">
+						<img src="static/img/dmass.png" height="340" width="340">
+					</div>
+				
+
+					<div id="dmass-des">
+						<h2 style="color: silver;">Damascus HighSchool</h2>
+						<h3 style="color: silver;"> </h3>
+						<h4 style="color: silver;"> Aug 2015-May 2015</h4>
+						<p>Blah Blah aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+
+					</div>
+				</div>
+						
+					
+		</section>
+
+		<!--End Education section -->
+
+
+		<!--Experience section -->
+		<section id="experience" class="experience-section">
+			
+							<h1>Experience</h1>
+
+		</section>
+
+		<!--Experience section -->
+
+		<section id="projects" class="projects-section">
+
+		<h1>Projects</h1>
+					
+
+						
+
+
+						<!-- Jumbotron -->
+						<div class="jumbotron one-third" id="nix">
+							<h2>Nixtek</h2>
+							
+							
+
+							<p>Nixtek solutions is a very innovatie company that develops software. I will be assiting in this process as well as creating its website.</p>
+						</div>
+
+
+						<!-- Jumbotron -->
+						<div class="jumbotron one-third" id="my">
+							<h2>My Site</h2>
+							
+							
+
+							<p>This is my first website and I am building it to learn how to develop a site on my own.</p>
+							<p>Today's date is </p>
+						</div>
+
+						
+
+						<!-- Jumbotron -->
+						<div class="jumbotron one-third cover-bg" id="anaanu" >
+							<h2>Annanu</h2>
+							
+							<p><a class="btn btn-lg btn-primary" href="http://anaanu.com" target="_blank" role="button">Welcome</a></p>
+
+							<p>I am working with a very smart peer of mine named Ganesh. His site Anaanu enables students to take advantage of your university's grade distribution information. With this resource, students can make more intelligent and informed decisions in which course to choose and more so with which professor. Whether you are looking for that easy “A” class or just trying to find the best professor for a particular course, look no further, Anaanu is the answer.</p>
+						</div>
+
+
+		</section>
+
+		<!--End Experience section -->
+
+		<!-- Contact Section -->
+		<section id="contact" class="contact-section">
+			
+						<h1 style="color: white;">Contact Me</h1>
+							<p>
+								Hi! Please feel free to contact me with any questions about anything. I will be glad to help you out with anything I can.
+							</p>
+								<div class="connect-wrapper">
+								<footer>
+
+									
+									<h2>
+										Connect With Me	
+									</h2>
+									<p style="color: black;">
+										Follow me to see updates, news, and glimpses into the life of an undergraduate student at Virginia Tech.
+									</p>
+									<ul class="social">
+				
+										<li><a href="https://www.facebook.com/profile.php?id=100007770737263" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+										<li><a href="https://www.linkedin.com/in/alex-loulou-6b2a41120/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+										<li><a href="https://www.instagram.com/aloulou17/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+										<li><a href="https://plus.google.com/u/0/103421757325793810670" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+				
+
+									</ul>
+
+								</footer>	
+								<footer class="second" >
+									
+										<p style="text-align: center; ">&copy; Alex Loulou 2017</p>
+								</footer>						
+								</div>
+				
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a id="back-to-top" href="#" class="btn btn-default btn-sm back-to-top" role="button" title="Click to return to the top of the page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-arrow-up"></span></a>
+
+		<!-- jQuery -->
+		<script src="/static/jquery/jquery-3.2.1.min.js"></script>
+
+		<!-- Bootstrap Core JavaScript -->
+		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Scrolling Nav JavaScript -->
+		<script src="/static/js/jquery.easing.min.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$(window).scroll(function () {
+					if ($(".navbar").offset().top > 50) {
+						$(".navbar-fixed-top").addClass("top-nav-collapse");
+					} else {
+						$(".navbar-fixed-top").removeClass("top-nav-collapse");
+					}
+					if ($(this).scrollTop() > 50) {
+						$('#back-to-top').fadeIn();
+					} else {
+						$('#back-to-top').fadeOut();
+					}
+				});
+				$(document).on('click', 'a.page-scroll', function (event) {
+					var $anchor = $(this);
+					$('html, body').stop().animate({
+						scrollTop: $($anchor.attr('href')).offset().top
+					}, 1500, 'easeInOutExpo');
+					event.preventDefault();
+				});
+				$('#back-to-top').click(function () {
+					$('#back-to-top').tooltip('hide');
+					$(window).scrollTop(0);
+					$('html,body').animate({
+						scrollTop: 0
+					}, 800);
+					return false;
+				});
+				$('#back-to-top').tooltip();
+
+			});
+		</script>
+	</body>
+
+</html>
