@@ -11,7 +11,13 @@
 
 		<!--Title brand -->
 		<link rel="icon" type="image/png" sizes="32x32" href="/static/img/b0510a52fc8aad60-32x32.ico">
-		
+		<!--Alloes me to use font -->
+		<link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
 
 
 		<title>Alex Loulou</title>
@@ -30,10 +36,10 @@
 		<![endif]-->
 
 		<style>
+
 			body {
 				width: 100%;
 				height: 100%;
-
 			}
 
 			html {
@@ -67,8 +73,6 @@
 				text-align: center;
 				background: #fff;
 
-				
-
 			}
 
 			.intro-title{
@@ -79,6 +83,27 @@
 				height: 100%;
 			}
 
+			.intro-name {
+				width: 100%;
+				font-family: 'Revalia', cursive;
+				font-weight: 500;
+				font-size: 130px;
+				color: white;
+				position: absolute;
+				margin-top: 375px;
+				
+			
+			}
+
+			.intro-small-name {
+				font-family: 'Revalia', cursive;
+				text-align: center;
+				font-weight: 500;
+				font-size: 115px;
+				color: black;
+			
+			}
+
 			.about-section {
 				height: 100%;
 				padding-top: 150px;
@@ -87,55 +112,216 @@
 			}
 			.education-section {
 				height: 100%;
-				padding-top: 150px;
+				padding-top: 50px;
 				text-align: center;
 				background: #333;
 			}
 			.experience-section {
 				height: 100%;
-				padding-top: 150px;
+				padding-top: 100px;
 				text-align: center;
 				background: #eee;
 			}
 
 			.projects-section {
 				height: 100%;
-				padding-top: 150px;
+				padding-top: 50px;
 				text-align: center;
-				background: #fff;
+				background: #333;
+				
 			}
+			#projects h2{
+				color: white;
+				font-weight:200;
+				font-size: 48px;
+			}
+			#projects h1{
+				color: white;
+				font-weight:400;
+				font-size: 72px;
+				padding-bottom: 40px; 
+			}
+
 
 			.contact-section {
 				height: 100%;
-				padding-top: 150px;
+				padding-top: 20px;
 				text-align: center;
 				background: #333;
+				color: white;
 
 			}
 
-			.intro-name {
-				font-family: 'Pacifico',cursive;
-				font-weight: 500;
-				font-size: 150px;
-				color: white;
-				position: absolute;
-				top: 320px;
-				left:370px;
-					}
-
-			.intro-small-name {
-				font-family: 'Pacifico',cursive;
-				text-align: center;
-				font-weight: 500;
-				font-size: 150px;
-				color: black;
+			.about-wrapper {
+				float: left;
+				width: 100%;
+				height: auto;
+				margin: 0 auto;
 			
-					}
+			}
+
+			#about-1{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(340deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 2%;
+
+
+			}
+			#about-2{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(2deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 2%;
+
+
+			}
+			#about-3{
+				height: auto;
+				width: auto;
+				max-width: 350px;
+				max-height: 350px;
+				transform: rotate(13deg);
+				padding: 0;
+				border: black solid 5px;
+				margin: 3%;
+
+
+
+			}
+
+
+			.tech-wrapper{
+
+				width: 100%;
+				height: 350px;
+				padding: 2%;
+				}
+			#tech-img{
+				width: 50%;
+				float: left;
+			}
+			#tech-des{
+				padding: 2%;
+				width: 50%;
+				color: silver;
+				font-weight: 400;
+				text-align: left;
+				float: right;
+			}
+			.dmass-wrapper{
+				width: 100%;
+				height: 350px;
+				padding:2%;
+
+			}
+			#dmass-img{
+				width: 50%;
+				padding-right: 20%;
+				float: right;
+			}
+			#dmass-des{
+				float: left;
+				width: 50%;
+				color: silver;
+				font-weight: 400;
+				text-align: left;
+				padding-left: 10%;
+			}
+
+			.connect-wrapper{
+				background-color: #eee;
+				height: auto;
+				float: left;
+				width: 100%;float: right;
+				
+			}
 
 			.one-third{
-
+				width: 33%;
+				height: 100%;
+				float: left;
+				text-align: center;
 			}
 
+			.social{
+				list-style-type: none;
+				text-align: center;
+
+					}
+
+			.social li{
+				display: inline;
+			}
+
+			.social i{
+				font-size: 460%;
+				margin: 1%;
+				padding: 2% 5% 2% 5%;
+				color: black;
+			}
+			.social i:hover{
+				color: white;
+			}
+			footer.second{
+				color: black;
+			}
+
+			.cover-bg {
+			  background: 
+			    linear-gradient(
+			      rgba(2, 85, 139, 0.98), 
+			      rgba(2,85, 139,.35)
+			    ),
+			  url(static/img/bg.png) no-repeat center center fixed; 
+			  -webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+			  color: #fff;
+			  height: 100%;
+			 
+			}
+
+			#anaanu{
+				text-align: center;
+				padding-left: 2%;
+				padding-right: 2%;
+				border: solid #fff 1px;
+				
+			}
+			#nix{
+				text-align: center;
+				border: solid white 1px;
+				background: #1c92d2;  /* fallback for old browsers */
+				background: #43C6AC;  /* fallback for old browsers */
+				background: -webkit-linear-gradient(to bottom, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+				background: linear-gradient(to bottom, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+				color: #fff;
+				padding-left: 2%;
+				padding-right: 2%
+
+
+				
+			}
+			#my{
+				text-align: center;
+				background-color: #333;
+				border: solid white 1px;
+				color: #fff;
+				padding-left: 2%;
+				padding-right: 2%
+
+				
+			}
 
 
 
@@ -189,8 +375,11 @@
 			</div>
 			<!-- /.container -->
 		</nav>
-
 		<!-- End Nav Bar -->
+
+
+
+
 
 		<!-- Intro Section -->
 		<section id="intro" class="intro-section hidden-xs intro-title">
@@ -215,6 +404,12 @@
 
 		<!-- End Intro -->
 
+
+
+
+
+
+
 		<!-- About Section -->
 		<section id="about" class="about-section">
 			<div class="container">
@@ -225,15 +420,18 @@
 						<br />
 						<br />
 						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.</p>
+						<br />
+						<br />
+						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.Blah blah blah</p>
 
-						<div class="one-third">
-							<img src="/static/img/me1.png">
+						<div class="about-wrapper">
+							<img id="about-1" src="/static/img/me1.png">
 
+							<img id="about-2" src="/static/img/me2.png">
 
-							<img src="/static/img/me2.png">
-
-							<img src="/static/img/aboutme.png">
+							<img id="about-3" src="/static/img/aboutme.png">
 						</div>
+					
 					</div>
 				</div>
 			</div>
@@ -241,61 +439,153 @@
 
 		<!-- End about section -->
 
-		<section id="education" class="education-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<!-- Jumbotron -->
-						<div class="jumbotron" style="background-color:#333;">
-							<h1>Education</h1>
-							<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-							<p><a class="btn btn-lg btn-warning" href="http://vt.edu" role="button">Virginia Tech</a></p>
-						</div>
+		<!--Education section -->
+		<section id="education" class="education-section" style="color: silver;">
+				
+			<h1 style="color: silver;">Education</h1>
+			<p>Undergraduate GPA: 3.4/4</p>
+			<p><a class="btn btn-lg btn-warning" href="http://vt.edu" role="button">Virginia Tech</a></p>
+				
+				<div class=tech-wrapper>
+					<div id="tech-img">
+						<img src="static/img/VT_LOGO.png">
+					</div>
+
+					<div id="tech-des">
+						<h2 style="color: silver;">Virginia Polytechnic Institute and State University</h2>
+						<h3 style="color: silver;">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
+						<h4 style="color: silver;"> Aug 2015-May 2019</h4>
+						<h5 style="color: silver;">Member of Pi Lambda Phi</h5>
+						
+
 					</div>
 				</div>
-			</div>
+
+				
+				
+				
+
+				<div class=dmass-wrapper>
+
+					<div id="dmass-img">
+						<img src="static/img/dmass.png" height="340" width="340">
+					</div>
+				
+
+					<div id="dmass-des">
+						<h2 style="color: silver;">Damascus HighSchool</h2>
+						<h3 style="color: silver;"> </h3>
+						<h4 style="color: silver;"> Aug 2015-May 2015</h4>
+						<p>Blah Blah aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+
+					</div>
+				</div>
+						
+					
 		</section>
 
+		<!--End Education section -->
+
+
+		<!--Experience section -->
 		<section id="experience" class="experience-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<!-- Jumbotron -->
-						<div class="jumbotron" style="background-color:#333;">
+			
 							<h1>Experience</h1>
-							<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-							<p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</section>
+
+		<!--Experience section -->
 
 		<section id="projects" class="projects-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
+
+		<h1>Projects</h1>
+					
+
+						
+
+
 						<!-- Jumbotron -->
-						<div class="jumbotron" style="background-color:#333;">
-							<h1>Alex Loulou</h1>
-							<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-							<p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+						<div class="jumbotron one-third" id="nix">
+							<h2>Nixtek</h2>
+							
+							
+
+							<p>Nixtek solutions is a very innovatie company that develops software. I will be assiting in this process as well as creating its website.</p>
 						</div>
-					</div>
-				</div>
-			</div>
+
+
+						<!-- Jumbotron -->
+						<div class="jumbotron one-third" id="my">
+							<h2>My Site</h2>
+							
+							
+
+							<p>This is my first website and I am building it to learn how to develop a site on my own.</p>
+							<p>Today's date is </p>
+						</div>
+
+						
+
+						<!-- Jumbotron -->
+						<div class="jumbotron one-third cover-bg" id="anaanu" >
+							<h2>Annanu</h2>
+							
+							<p><a class="btn btn-lg btn-primary" href="http://anaanu.com" target="_blank" role="button">Welcome</a></p>
+
+							<p>I am working with a very smart peer of mine named Ganesh. His site Anaanu enables students to take advantage of your university's grade distribution information. With this resource, students can make more intelligent and informed decisions in which course to choose and more so with which professor. Whether you are looking for that easy “A” class or just trying to find the best professor for a particular course, look no further, Anaanu is the answer.</p>
+						</div>
+
+
 		</section>
+
+		<!--End Experience section -->
 
 		<!-- Contact Section -->
 		<section id="contact" class="contact-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<h1>Contact Me</h1>
-					</div>
-				</div>
-			</div>
+			
+						<h1 style="color: white;">Contact Me</h1>
+							<p>
+								Hi! Please feel free to contact me with any questions about anything. I will be glad to help you out with anything I can.
+							</p>
+								<div class="connect-wrapper">
+								<footer>
+
+									
+									<h2>
+										Connect With Me	
+									</h2>
+									<p style="color: black;">
+										Follow me to see updates, news, and glimpses into the life of an undergraduate student at Virginia Tech.
+									</p>
+									<ul class="social">
+				
+										<li><a href="https://www.facebook.com/profile.php?id=100007770737263" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+										<li><a href="https://www.linkedin.com/in/alex-loulou-6b2a41120/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+										<li><a href="https://www.instagram.com/aloulou17/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+										<li><a href="https://plus.google.com/u/0/103421757325793810670" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+				
+
+									</ul>
+
+								</footer>	
+								<footer class="second" >
+									
+										<p style="text-align: center; ">&copy; Alex Loulou 2017</p>
+								</footer>						
+								</div>
+				
 		</section>
+
+
+
+
+
+
+
+
 
 
 
