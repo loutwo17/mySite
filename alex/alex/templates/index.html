@@ -15,6 +15,10 @@
 		<link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
 
 
@@ -36,6 +40,8 @@
 		<![endif]-->
 
 		<style>
+
+			#success_message{ display: none;}
 
 			body {
 				width: 100%;
@@ -106,7 +112,7 @@
 
 			.about-section {
 				height: 100%;
-				padding-top: 150px;
+				padding-top: 50px;
 				text-align: center;
 				background: #eee;
 			}
@@ -115,6 +121,7 @@
 				padding-top: 50px;
 				text-align: center;
 				background: #333;
+				color: white;
 			}
 			.experience-section {
 				height: 100%;
@@ -323,6 +330,10 @@
 				
 			}
 
+			
+			#white{
+				color:white;
+			}
 
 
 
@@ -415,7 +426,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1>About Me</h1>
+						<h1 style="font-size: 72px; font-weight: 400;">About Me</h1>
 						<p>I am currently attednding Virginia Polytechnic Institute and State University. I am studying to become a computer engineer, right now I am in the summer going into junior year, but by the time you are reading this, I will be sitting in my classes as a junior. I was challenged to create a personal website by a mentor of mine, and a little about me is that I love a good challenge. So I took it upon myself to sum up who I really am and make it into a website. I chose to study computer enginnering because I am enthralled with technology and how we can use it to accomplish anything we truly want.
 						<br />
 						<br />
@@ -440,61 +451,163 @@
 		<!-- End about section -->
 
 		<!--Education section -->
-		<section id="education" class="education-section" style="color: silver;">
+		<section id="education" class="education-section">
 				
-			<h1 style="color: silver;">Education</h1>
+			<h1 style="font-size: 72px; font-weight: 400;" id="white">Education</h1>
 			<p>Undergraduate GPA: 3.4/4</p>
 			<p><a class="btn btn-lg btn-warning" href="http://vt.edu" role="button">Virginia Tech</a></p>
 				
-				<div class=tech-wrapper>
-					<div id="tech-img">
-						<img src="static/img/VT_LOGO.png">
-					</div>
-
-					<div id="tech-des">
-						<h2 style="color: silver;">Virginia Polytechnic Institute and State University</h2>
-						<h3 style="color: silver;">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
-						<h4 style="color: silver;"> Aug 2015-May 2019</h4>
-						<h5 style="color: silver;">Member of Pi Lambda Phi</h5>
+				
 						
+						<div class="container-fluid" style="padding-top: 3%;">
+						 
+						  <div class="row">
 
-					</div>
-				</div>
+						    <div class="col-sm-5" >
+						    	<img src="static/img/VT_LOGO.png">
+						    </div>
 
-				
-				
-				
+						    <div class="col-sm-7" >		
+						    	<h2 id="white">Virginia Polytechnic Institute and State University</h2>
 
-				<div class=dmass-wrapper>
+								<h3 id="white">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
+								
+								<h4 id="white"> Aug 2015-May 2019</h4>
+								
+								<h5 id="white">Member of Pi Lambda Phi</h5>
+							</div>
 
-					<div id="dmass-img">
-						<img src="static/img/dmass.png" height="340" width="340">
-					</div>
-				
+						  </div>
 
-					<div id="dmass-des">
-						<h2 style="color: silver;">Damascus HighSchool</h2>
-						<h3 style="color: silver;"> </h3>
-						<h4 style="color: silver;"> Aug 2015-May 2015</h4>
-						<p>Blah Blah aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+						   <div class="row" style="padding-top: 3%;">
 
-					</div>
-				</div>
-						
+						    <div class="col-sm-7">
+						   			<h2 id="white">Damascus HighSchool</h2>
+									<h3> </h3>
+									<h4 id="white">Aug 2015-May 2015</h4>
+									<p>Blah Blah aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
+						    	
+						    </div>
+
+						    <div class="col-sm-5" >
+						    <img src="static/img/dmass.png" height="340" width="340">
+						    		
+						    </div>
+						    
+						  </div>
+						</div>
 					
 		</section>
 
 		<!--End Education section -->
 
 
+
+
+
 		<!--Experience section -->
 		<section id="experience" class="experience-section">
 			
-							<h1>Experience</h1>
+							<h1 style="font-size: 72px; font-weight: 400;">Experience</h1>
+
+							<div class="container-fluid">
+							
+							  <div class="row">
+							    <div class="col-sm-4">
+							    <img src="static/img/nixtek.png" class="img-circle img-responsive" height="340" width="340" >
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <h4>Associate, Nixtek Solutions Inc.</h4>
+							    <h5>Damascus, MD. June 2014-present.</h5>
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <p>Provide technical support on a part-time basis as junior staff member for software solutions and technical consulting services firm. Major client: U.S. Dept. of Justice. 
+								Assist in documenting and testing custom developed, secure web-based applications.
+								</p>
+							    
+							    </div>
+
+
+
+							  </div>
+							</div>
+
+							<div class="container-fluid">
+							
+							  <div class="row">
+							  
+							    <div class="col-sm-4">
+							     <img src="static/img/favicon-96x96.png" class="img-circle img-responsive" >
+							    </div>
+							    
+							    <div class="col-sm-4">
+							   	<h4>Developer, Anaanu.</h4>
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <p>Develop blah blah blah.</p>
+							    </div>
+
+
+
+							  </div>
+							</div>
+
+							<div class="container-fluid">
+							
+							  <div class="row">
+							  
+							    <div class="col-sm-4">
+							     <img src="static/img/Beach.png" class="img-circle img-responsive" >
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <h4>Beach Lifeguard, South Bethany Beach Patrol.</h4>
+							    <h5>May 2016-August 2017</h5>
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <p>Scanned designated Atlantic Ocean area and responded to swimmers in distress. 
+
+								Stayed informed about ocean conditions and communicated with guard staff, beach goers and swimmers to maintain a safe environment.</p>
+							    </div>
+
+
+
+							  </div>
+							</div>
+
+							<div class="container-fluid">
+							
+							  <div class="row">
+							  
+							    <div class="col-sm-4">
+							     <img src="static/img/BTD_Logo.png" class="img-circle img-responsive" height="340" width="340">
+							    </div>
+							    
+							    
+							    <div class="col-sm-4">
+							    <h4>Pool Lifeguard, Bear Trap Dunes.</h4>
+							    </div>
+							    
+							    <div class="col-sm-4">
+							    <p>Assisted swimmers and enforced safety policies at resort community with multiple pools. 
+								Helped maintain a clean pool environment
+								</p>
+							    </div>
+
+
+
+							  </div>
+							</div>
+
+
 
 		</section>
 
-		<!--Experience section -->
+		<!--end Experience section -->
 
 		<section id="projects" class="projects-section">
 
@@ -506,7 +619,7 @@
 
 						<!-- Jumbotron -->
 						<div class="jumbotron one-third" id="nix">
-							<h2>Nixtek</h2>
+							<h2><img src="static/img/nixtek.png" class="img-responsive img-rounded"></h2>
 							
 							
 
@@ -545,8 +658,179 @@
 			
 						<h1 style="color: white;">Contact Me</h1>
 							<p>
-								Hi! Please feel free to contact me with any questions about anything. I will be glad to help you out with anything I can.
+								Hi! Have any questions? Get in Touch!
 							</p>
+
+
+							<div class="container" style="color: black;">
+
+							    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+							<fieldset>
+
+							<!-- Form Name -->
+							<legend style="color: black;">Ask away!</legend>
+
+							<!-- Text input-->
+
+							<div class="form-group">
+							  <label class="col-md-4 control-label">First Name</label>  
+							  <div class="col-md-4 inputGroupContainer">
+							  <div class="input-group">
+							  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							  <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+							    </div>
+							  </div>
+							</div>
+
+							<!-- Text input-->
+
+							<div class="form-group">
+							  <label class="col-md-4 control-label" >Last Name</label> 
+							    <div class="col-md-4 inputGroupContainer">
+							    <div class="input-group">
+							  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+							  <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+							    </div>
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							       <div class="form-group">
+							  <label class="col-md-4 control-label">E-Mail</label>  
+							    <div class="col-md-4 inputGroupContainer">
+							    <div class="input-group">
+							        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+							  <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+							    </div>
+							  </div>
+							</div>
+
+
+							<!-- Text input-->
+							       
+							<div class="form-group">
+							  <label class="col-md-4 control-label">Phone #</label>  
+							    <div class="col-md-4 inputGroupContainer">
+							    <div class="input-group">
+							        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+							  <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+							    </div>
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							      
+							<div class="form-group">
+							  <label class="col-md-4 control-label">Address</label>  
+							    <div class="col-md-4 inputGroupContainer">
+							    <div class="input-group">
+							        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+							  <input name="address" placeholder="Address" class="form-control" type="text">
+							    </div>
+							  </div>
+							</div>
+
+							
+
+							<!-- Select Basic -->
+							   
+							<div class="form-group"> 
+							  <label class="col-md-4 control-label">State</label>
+							    <div class="col-md-4 selectContainer">
+							    <div class="input-group">
+							        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+							    <select name="state" class="form-control selectpicker" >
+							      <option value=" " >Please select your state</option>
+							      <option>Alabama</option>
+							      <option>Alaska</option>
+							      <option >Arizona</option>
+							      <option >Arkansas</option>
+							      <option >California</option>
+							      <option >Colorado</option>
+							      <option >Connecticut</option>
+							      <option >Delaware</option>
+							      <option >District of Columbia</option>
+							      <option> Florida</option>
+							      <option >Georgia</option>
+							      <option >Hawaii</option>
+							      <option >daho</option>
+							      <option >Illinois</option>
+							      <option >Indiana</option>
+							      <option >Iowa</option>
+							      <option> Kansas</option>
+							      <option >Kentucky</option>
+							      <option >Louisiana</option>
+							      <option>Maine</option>
+							      <option >Maryland</option>
+							      <option> Mass</option>
+							      <option >Michigan</option>
+							      <option >Minnesota</option>
+							      <option>Mississippi</option>
+							      <option>Missouri</option>
+							      <option>Montana</option>
+							      <option>Nebraska</option>
+							      <option>Nevada</option>
+							      <option>New Hampshire</option>
+							      <option>New Jersey</option>
+							      <option>New Mexico</option>
+							      <option>New York</option>
+							      <option>North Carolina</option>
+							      <option>North Dakota</option>
+							      <option>Ohio</option>
+							      <option>Oklahoma</option>
+							      <option>Oregon</option>
+							      <option>Pennsylvania</option>
+							      <option>Rhode Island</option>
+							      <option>South Carolina</option>
+							      <option>South Dakota</option>
+							      <option>Tennessee</option>
+							      <option>Texas</option>
+							      <option> Uttah</option>
+							      <option>Vermont</option>
+							      <option>Virginia</option>
+							      <option >Washington</option>
+							      <option >West Virginia</option>
+							      <option>Wisconsin</option>
+							      <option >Wyoming</option>
+							    </select>
+							  </div>
+							</div>
+							</div>
+
+							
+							
+							
+							<!-- Text area -->
+							  
+							<div class="form-group">
+							  <label class="col-md-4 control-label">Your message</label>
+							    <div class="col-md-4 inputGroupContainer">
+							    <div class="input-group">
+							        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+							        	<textarea class="form-control" name="comment" placeholder="Message"></textarea>
+							  </div>
+							  </div>
+							</div>
+
+							<!-- Success message -->
+							<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, I will get back to you shortly.</div>
+
+							<!-- Button -->
+							<div class="form-group">
+							  <label class="col-md-4 control-label"></label>
+							  <div class="col-md-4">
+							    <button type="submit" class="btn btn-default" >Send <span class="glyphicon glyphicon-send"></span></button>
+							  </div>
+							</div>
+
+							</fieldset>
+							</form>
+							</div>
+							    </div>
+							    <!-- /.container -->
+
+
+
 								<div class="connect-wrapper">
 								<footer>
 
@@ -634,6 +918,135 @@
 				$('#back-to-top').tooltip();
 
 			});
+		</script>
+
+
+		<!--contact form validation -->
+		<script type="text/javascript">
+			
+			  $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            first_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+            comment: {
+                validators: {
+                      stringLength: {
+                        min: 10,
+                        max: 200,
+                        message:'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description of your project'
+                    }
+                    }
+                }
+            }
+        })
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+
+
 		</script>
 	</body>
 
