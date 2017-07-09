@@ -1,8 +1,8 @@
 # all the imports
 import os
 import sqlite3
-from flask import Flask, request, session, g, redirect, url_for, abort, \
-	render_template, flash
+from flask import Flask, request, session, g, redirect, url_for, abort, render_template, flash, request, jsonify
+from flask_mail import Message, Mail
 app = Flask(__name__) # create the application instance :)
 app.config.from_object(__name__) # load config from this file , flaskr.py
 
@@ -12,8 +12,21 @@ app.config.update(dict(
 	SECRET_KEY='development key',
 	USERNAME='admin',
 	PASSWORD='default'
+	
 ))
 app.config.from_envvar('alex_SETTINGS', silent=True)
+
+app.config.update(
+	
+		#EMAIL SETTINGS
+		MAIL_SERVER='smtp.gmail.com',
+		MAIL_PORT=465,
+		MAIL_USE_SSL=True,
+		MAIL_USE_TLS=False,
+		MAIL_USERNAME='lexloulou@gmail.com',
+		MAIL_PASSWORD='Laxbro17!'
+)
+mail=Mail(app)
 
 def connect_db():
 	"""Connects to the specific database."""
@@ -52,42 +65,33 @@ def close_db(error):
 		g.sqlite_db.close()
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def show_entries():
     db = get_db()
     cur = db.execute('select title, text from entries order by id desc')
     entries = cur.fetchall()
     return render_template('index.html')
 
-@app.route('/add', methods=['POST'])
-def add_entry():
-    if not session.get('logged_in'):
-        abort(401)
-    db = get_db()
-    db.execute('insert into entries (title, text) values (?, ?)',
-               [request.form['title'], request.form['text']])
-    db.commit()
-    flash('New entry was successfully posted')
-    return redirect(url_for('show_entries'))
+@app.route('/form', methods=['POST'])
+def form():
+	fname=request.form['first_name']
+	lname=request.form['last_name']
+	email=request.form['email']
+	phone=request.form['phone']
+	addy=request.form['address']
+	state=request.form['state']
+	message=request.form['comment']
 
+	
+	
+  
+	msg = Message('Hello', sender = 'yourId@gmail.com', recipients = ['lexloulou@gmail.com'])
+	msg.body = "Hello Flask message sent from Flask-Mail"
+	msg.html = render_template('form.html', name=fname, lastname=lname, email=email, phone=phone,address=addy,state=state,message=message)
+	mail.send(msg)
+	return "Sent"
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    error = None
-    if request.method == 'POST':
-        if request.form['username'] != app.config['USERNAME']:
-            error = 'Invalid username'
-        elif request.form['password'] != app.config['PASSWORD']:
-            error = 'Invalid password'
-        else:
-            session['logged_in'] = True
-            flash('You were logged in')
-            return redirect(url_for('show_entries'))
-    return render_template('login.html', error=error)
+if __name__ == '__alex__':
+	app.run(debug=True)
 
-
-@app.route('/logout')
-def logout():
-    session.pop('logged_in', None)
-    flash('You were logged out')
-    return redirect(url_for('show_entries'))
+   

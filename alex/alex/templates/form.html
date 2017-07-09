@@ -1,0 +1,73 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+{% block content %}
+  <script src="js/scripts.js"></script>
+
+
+
+
+
+
+	<h1>Form Information </h1>
+
+	<h2>Your name is {{name}}</h2>
+
+
+	<table>
+		<tr>
+			<th>Data</th>
+		</tr>
+
+		<tr>
+			<td>{{name}}</td>
+		</tr>
+
+		<tr>
+			<td>{{lastname}}</td>
+		</tr>
+		<tr>
+			<td>{{email}}</td>
+		</tr>
+
+		<tr>
+			<td>{{phone}}</td>
+		</tr>
+		<tr>
+			<td>{{address}}</td>
+		</tr>
+		<tr>
+			<td>{{state}}</td>
+		</tr>
+
+		<tr>
+			<td>{{message}}</td>
+		</tr>
+
+	</table>
+
+
+{% endblock %}
+
+
+
+
+</body>
+</html>
