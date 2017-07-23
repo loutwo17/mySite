@@ -10,7 +10,7 @@ function renderTime(){
 		var month = mydate.getMonth();
 		var daym = mydate.getDate();
 		var dayarray = new Array("Sunday,","Monday,","Tuesday,","Wednesday,","Thursday,","Friday,","Saturday,");
-		var montharray = new Array("January","February","March","April","May","June","July","August","September","October","November","December",);
+		var montharray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
 	// end date
 
 	// Time 
@@ -37,22 +37,14 @@ function renderTime(){
 			sec = "0" + sec;
 		}
 
-		var myClock = document.getElementById("clockDisplay");
-		myClock.textContent =" "+dayarray[day]+
-							 " " +daym + 
-							 " " +montharray[month]+ 
-							 " "+ year+ 
-							 " |"+ hour+ 
-							 ":" +min+ 
-							 ":" +sec;
 
-		myClock.innerText =  " "+dayarray[day]+
+		$("#clockDisplay").html(" "+dayarray[day]+
 							 " " +daym + 
 							 " " +montharray[month]+ 
 							 " "+ year+ 
 							 " |"+ hour+ 
 							 ":" +min+ 
-							 ":" +sec;
+							 ":" +sec);
 
 
 		setTimeout("renderTime()",1000);

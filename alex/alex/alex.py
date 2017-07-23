@@ -19,12 +19,12 @@ app.config.from_envvar('alex_SETTINGS', silent=True)
 app.config.update(
 	
 		#EMAIL SETTINGS
-		MAIL_SERVER='smtp.gmail.com',
+		MAIL_SERVER='email-smtp.us-east-1.amazonaws.com',
 		MAIL_PORT=465,
 		MAIL_USE_SSL=True,
 		MAIL_USE_TLS=False,
-		MAIL_USERNAME='lexloulou@gmail.com',
-		MAIL_PASSWORD='Laxbro17!'
+		MAIL_USERNAME='AKIAJQD3DQBN6Q677DUQ',
+		MAIL_PASSWORD='Ai6mnfN0JxYMD9akF0y8s9PhMmP+woi9hd4AHMpyHHMU'
 )
 mail=Mail(app)
 
@@ -85,7 +85,7 @@ def form():
 	
 	
   
-	msg = Message('Hello', sender = 'yourId@gmail.com', recipients = ['lexloulou@gmail.com'])
+	msg = Message('Hello', sender = 'lexloulou@gmail.com', recipients = ['lexloulou@gmail.com'])
 	msg.body = "Hello Flask message sent from Flask-Mail"
 	msg.html = render_template('form.html', name=fname, lastname=lname, email=email, phone=phone,address=addy,state=state,message=message)
 	mail.send(msg)
