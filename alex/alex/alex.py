@@ -25,6 +25,7 @@ app.config.update(
 		MAIL_USE_TLS=False,
 		MAIL_USERNAME='AKIAJQD3DQBN6Q677DUQ',
 		MAIL_PASSWORD='Ai6mnfN0JxYMD9akF0y8s9PhMmP+woi9hd4AHMpyHHMU'
+
 )
 mail=Mail(app)
 
