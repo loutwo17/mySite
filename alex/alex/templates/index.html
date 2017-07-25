@@ -12,21 +12,21 @@
 		<!--Title brand -->
 		<link rel="icon" type="image/png" sizes="32x32" href="/static/img/b0510a52fc8aad60-32x32.ico">
 		<!--Alloes me to use font -->
-		<link href="https://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
-
+		<link href="http://fonts.googleapis.com/css?family=Revalia" rel="stylesheet">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+		<script src="/static/jquery/jquery-3.2.1.min.js"></script>
+		<script src="/static/jquery/jquery-migrate-3.0.0.min.js"></script>
+		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/js/date.js"></script>
+		<script type="text/javascript" src="/static/bootstrap-validator-master/validator.js"></script>
+		<script type="text/javascript" src="/static/vue/vue.js"></script>
+		<!-- Scrolling Nav JavaScript -->
+		<script src="/static/js/jquery.easing.min.js"></script>
 
 
 		<title>Alex Loulou</title>
 
-		<!-- Bootstrap Core CSS -->
-		<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-		<!-- Custom CSS -->
-		<link href="/static/css/scrolling-nav.css" rel="stylesheet">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +36,8 @@
 		<![endif]-->
 
 		<style>
+
+			#success_message{ display: none;}
 
 			body {
 				width: 100%;
@@ -66,23 +68,20 @@
 					padding: 0;
 				}
 			}
-
 			.intro-section {
-				height: 100%;
 				padding-top: 150px;
 				text-align: center;
 				background: #fff;
-
 			}
-
 			.intro-title{
+
 				background-image: url(static/img/intro.png);
+
 				background-size: 100%;
 				background-repeat: no-repeat;
 				border: black solid 5px;
 				height: 100%;
 			}
-
 			.intro-name {
 				width: 100%;
 				font-family: 'Revalia', cursive;
@@ -91,36 +90,47 @@
 				color: white;
 				position: absolute;
 				margin-top: 375px;
-				
-			
 			}
 
 			.intro-small-name {
 				font-family: 'Revalia', cursive;
 				text-align: center;
 				font-weight: 500;
-				font-size: 115px;
+				font-size: 500%;
 				color: black;
-			
+
 			}
 
 			.about-section {
-				height: 100%;
-				padding-top: 150px;
+
+				padding-top: 50px;
 				text-align: center;
 				background: #eee;
+				padding-bottom: 50px;
+
+			}
+			.about-section p{
+				line-height: 1.5;
+				color: black;
+				font-size: 16px;
 			}
 			.education-section {
-				height: 100%;
+
 				padding-top: 50px;
 				text-align: center;
 				background: #333;
+				color: white;
+
+				padding-bottom: 50px;
 			}
 			.experience-section {
-				height: 100%;
+
 				padding-top: 100px;
 				text-align: center;
 				background: #eee;
+				color: black;
+
+				padding-bottom: 50px;
 			}
 
 			.projects-section {
@@ -128,7 +138,9 @@
 				padding-top: 50px;
 				text-align: center;
 				background: #333;
-				
+
+				padding-bottom: 50px;
+
 			}
 			#projects h2{
 				color: white;
@@ -144,109 +156,54 @@
 
 
 			.contact-section {
-				height: 100%;
-				padding-top: 20px;
+
+				padding-top: 80px;
 				text-align: center;
 				background: #333;
 				color: white;
 
 			}
 
-			.about-wrapper {
-				float: left;
-				width: 100%;
-				height: auto;
-				margin: 0 auto;
-			
-			}
-
 			#about-1{
-				height: auto;
-				width: auto;
-				max-width: 350px;
-				max-height: 350px;
-				transform: rotate(340deg);
-				padding: 0;
+
+				max-width: 300px;
+				max-height: 300px;
+				transform: rotate(350deg);
+
 				border: black solid 5px;
-				margin: 2%;
+
 
 
 			}
 			#about-2{
-				height: auto;
-				width: auto;
-				max-width: 350px;
-				max-height: 350px;
+
+				max-width: 300px;
+				max-height: 300px;
 				transform: rotate(2deg);
-				padding: 0;
 				border: black solid 5px;
-				margin: 2%;
 
 
 			}
 			#about-3{
-				height: auto;
-				width: auto;
-				max-width: 350px;
-				max-height: 350px;
+
+				max-width: 300px;
+				max-height: 300px;
 				transform: rotate(13deg);
-				padding: 0;
 				border: black solid 5px;
-				margin: 3%;
-
-
 
 			}
 
-
-			.tech-wrapper{
-
-				width: 100%;
-				height: 350px;
-				padding: 2%;
-				}
-			#tech-img{
-				width: 50%;
-				float: left;
-			}
-			#tech-des{
-				padding: 2%;
-				width: 50%;
-				color: silver;
-				font-weight: 400;
-				text-align: left;
-				float: right;
-			}
-			.dmass-wrapper{
-				width: 100%;
-				height: 350px;
-				padding:2%;
-
-			}
-			#dmass-img{
-				width: 50%;
-				padding-right: 20%;
-				float: right;
-			}
-			#dmass-des{
-				float: left;
-				width: 50%;
-				color: silver;
-				font-weight: 400;
-				text-align: left;
-				padding-left: 10%;
-			}
 
 			.connect-wrapper{
 				background-color: #eee;
 				height: auto;
 				float: left;
-				width: 100%;float: right;
-				
+				width: 100%;
+
 			}
 
 			.one-third{
-				width: 33%;
+
 				height: 100%;
 				float: left;
 				text-align: center;
@@ -256,7 +213,7 @@
 				list-style-type: none;
 				text-align: center;
 
-					}
+			}
 
 			.social li{
 				display: inline;
@@ -276,19 +233,19 @@
 			}
 
 			.cover-bg {
-			  background: 
-			    linear-gradient(
-			      rgba(2, 85, 139, 0.98), 
-			      rgba(2,85, 139,.35)
-			    ),
-			  url(static/img/bg.png) no-repeat center center fixed; 
-			  -webkit-background-size: cover;
-			  -moz-background-size: cover;
-			  -o-background-size: cover;
-			  background-size: cover;
-			  color: #fff;
-			  height: 100%;
-			 
+				background: 
+					linear-gradient(
+					rgba(2, 85, 139, 0.98), 
+					rgba(2,85, 139,.35)
+					),
+					url(static/img/bg.png) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+				color: #fff;
+				height: 100%;
+
 			}
 
 			#anaanu{
@@ -296,7 +253,7 @@
 				padding-left: 2%;
 				padding-right: 2%;
 				border: solid #fff 1px;
-				
+
 			}
 			#nix{
 				text-align: center;
@@ -310,7 +267,7 @@
 				padding-right: 2%
 
 
-				
+
 			}
 			#my{
 				text-align: center;
@@ -320,17 +277,30 @@
 				padding-left: 2%;
 				padding-right: 2%
 
-				
+
 			}
 
 
+			#white{
+				color:white;
+			}
 
+			.e-row{
+				padding-top: 25px;
+				padding-bottom: 5%;
+				min-height: 90px;
+			}
+			.center-img{
+				display: block; 
+				margin-left: auto;
+				margin-right: auto;
+			}
 
 		</style>
 
 	</head>
 
-	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
 
 		<!-- Navigation -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -406,32 +376,36 @@
 
 
 
-
-
-
-
 		<!-- About Section -->
 		<section id="about" class="about-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1>About Me</h1>
+						<h1 style="font-size: 72px; font-weight: 400;">About Me</h1>
 						<p>I am currently attednding Virginia Polytechnic Institute and State University. I am studying to become a computer engineer, right now I am in the summer going into junior year, but by the time you are reading this, I will be sitting in my classes as a junior. I was challenged to create a personal website by a mentor of mine, and a little about me is that I love a good challenge. So I took it upon myself to sum up who I really am and make it into a website. I chose to study computer enginnering because I am enthralled with technology and how we can use it to accomplish anything we truly want.
 						<br />
 						<br />
 						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.</p>
 						<br />
 						<br />
-						I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.Blah blah blah</p>
+						<p>I am the youngest of three. I have an older brother as well as an older sister. My family is a very important part of my life and I could not of accomplished this without them. One of my favorite things to do is spend time on the beach. Ever since I was a kid I have loved water.Blah blah blah</p>
 
-						<div class="about-wrapper">
-							<img id="about-1" src="/static/img/me1.png">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-4 col-xs-12" style="margin-top: 9%">
+									<img id="about-1" src="/static/img/me1.png">
+								</div>
 
-							<img id="about-2" src="/static/img/me2.png">
+								<div class="col-sm-4 col-xs-12" style="margin-top: 9%">
+									<img id="about-2" src="/static/img/me2.png">
+								</div>
 
-							<img id="about-3" src="/static/img/aboutme.png">
+								<div class="col-sm-4 col-xs-12" style="margin-top: 9%">
+									<img id="about-3" src="/static/img/aboutme.png">
+								</div>
+							</div>
 						</div>
-					
+
 					</div>
 				</div>
 			</div>
@@ -440,101 +414,207 @@
 		<!-- End about section -->
 
 		<!--Education section -->
-		<section id="education" class="education-section" style="color: silver;">
-				
-			<h1 style="color: silver;">Education</h1>
-			<p>Undergraduate GPA: 3.4/4</p>
+		<section id="education" class="education-section">
+
+			<h1 style="font-size: 72px; font-weight: 400;" id="white">Education</h1>
 			<p><a class="btn btn-lg btn-warning" href="http://vt.edu" role="button">Virginia Tech</a></p>
-				
-				<div class=tech-wrapper>
-					<div id="tech-img">
-						<img src="static/img/VT_LOGO.png">
+			<p style="font-weight: 400; font-size: 16px;">Undergraduate GPA: 3.4/4</p>
+
+
+
+			<div class="container-fluid" style="padding-top: 3%;">
+
+				<div class="row">
+
+					<div class="col-sm-5" >
+						<img src="static/img/VT_LOGO.png" class="img-responsive">
 					</div>
 
-					<div id="tech-des">
-						<h2 style="color: silver;">Virginia Polytechnic Institute and State University</h2>
-						<h3 style="color: silver;">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
-						<h4 style="color: silver;"> Aug 2015-May 2019</h4>
-						<h5 style="color: silver;">Member of Pi Lambda Phi</h5>
-						
+					<div class="col-sm-7" >		
+						<h2 id="white">Virginia Polytechnic Institute and State University</h2>
 
+						<h3 id="white">Junior pursuing Bachelor's in Computer Enginnering as well as a minor in Computer Science</h3>
+
+						<h4 id="white">Aug 2015-May 2019</h4>
+
+						<h5 id="white">Member of Pi Lambda Phi</h5>
 					</div>
+
 				</div>
 
-				
-				
-				
+				<div class="row" style="padding-top: 3%;">
 
-				<div class=dmass-wrapper>
+					<div class="col-sm-7">
+						<h2 id="white">Damascus HighSchool</h2>
+						<h3> </h3>
+						<h4 id="white">September 2011-May 2015</h4>
+						<p>U.S. News and World Report Best High Schools ranks Damascus High School 19th within the state of Maryland (out of 582 high schools, High-schools.com). Damascus offers a rigorous academic program for college-bound students, who have the opportunity to take Advanced Placement® course work and exams.	Damascus, 1 of 25 high schools in Montgomery County Public Schools, has a 95% graduation rate. However, Damascus is probably best known in the DC-MD-VA area for its athletics, notably the Hornets football team, which has won 9 state championships, most recently in 2015 and 2016.</p>
 
-					<div id="dmass-img">
+					</div>
+
+					<div class="col-sm-5" >
 						<img src="static/img/dmass.png" height="340" width="340">
-					</div>
-				
-
-					<div id="dmass-des">
-						<h2 style="color: silver;">Damascus HighSchool</h2>
-						<h3 style="color: silver;"> </h3>
-						<h4 style="color: silver;"> Aug 2015-May 2015</h4>
-						<p>Blah Blah aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa </p>
 
 					</div>
+
 				</div>
-						
-					
+			</div>
+
 		</section>
 
 		<!--End Education section -->
 
 
+
+
+
 		<!--Experience section -->
 		<section id="experience" class="experience-section">
-			
-							<h1>Experience</h1>
+
+			<h1 style="font-size: 72px; font-weight: 400;">Experience</h1>
+
+			<div class="container-fluid">
+
+				<div class="row e-row" >
+					<div class="col-sm-4">
+						<img src="static/img/nixtek.png" class="img-rounded img-responsive center-img" height="300" width="300" >
+					</div>
+
+					<div class="col-sm-4">
+						<h4>Associate, Nixtek Solutions Inc.</h4>
+						<h5>Damascus, MD. June 2014-present.</h5>
+					</div>
+
+					<div class="col-sm-4">
+						<p>Provide technical support on a part-time basis as junior staff member for software solutions and technical consulting services firm. Major client: U.S. Dept. of Justice. 
+							Assist in documenting and testing custom developed, secure web-based applications.
+						</p>
+
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row e-row">
+
+					<div class="col-sm-4">
+						<img src="static/img/favicon-96x96.png" class="img-circle img-responsive center-img" height="150" width="150" >
+					</div>
+
+					<div class="col-sm-4">
+						<h4>Developer, Anaanu.</h4>
+					</div>
+
+					<div class="col-sm-4">
+						<p>Develop blah blah blah.</p>
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row e-row">
+
+					<div class="col-sm-4">
+						<img src="static/img/Beach.png" class="img-circle img-responsive center-img" height="150" width="150">
+					</div>
+
+					<div class="col-sm-4">
+						<h4>Beach Lifeguard, South Bethany Beach Patrol.</h4>
+						<h5>May 2016-August 2017</h5>
+					</div>
+
+					<div class="col-sm-4">
+						<p>Scanned designated Atlantic Ocean area and responded to swimmers in distress. 
+
+							Stayed informed about ocean conditions and communicated with guard staff, beach goers and swimmers to maintain a safe environment.</p>
+					</div>
+
+
+
+				</div>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row e-row">
+
+					<div class="col-sm-4">
+						<img src="static/img/BTD_Logo.png" class="img-rounded img-responsive center-img" height="300" width="300" >
+					</div>
+
+
+					<div class="col-sm-4">
+						<h4>Pool Lifeguard, Bear Trap Dunes.</h4>
+					</div>
+
+					<div class="col-sm-4">
+						<p>Assisted swimmers and enforced safety policies at resort community with multiple pools. 
+							Helped maintain a clean pool environment
+						</p>
+					</div>
+
+
+
+				</div>
+			</div>
+
+
 
 		</section>
 
-		<!--Experience section -->
+		<!--end Experience section -->
 
 		<section id="projects" class="projects-section">
 
-		<h1>Projects</h1>
-					
-
-						
+			<h1>Projects</h1>
 
 
-						<!-- Jumbotron -->
-						<div class="jumbotron one-third" id="nix">
-							<h2>Nixtek</h2>
-							
-							
 
-							<p>Nixtek solutions is a very innovatie company that develops software. I will be assiting in this process as well as creating its website.</p>
-						</div>
+			<div class="row" style="height: 800px;">
+
+				<div class="col-sm-4 col-xs-12" style="height: 100%;">
+					<!-- Jumbotron -->
+					<div class="jumbotron one-third" id="nix">
+						<h2>NixtekSolutions</h2>
+						<br />
+						<h2 style="line-height: 1px; margin-top: -10px;">.com </h2>
+
+						<p style="padding-top: 10px; margin-top: 40px;">A very innovatie company that develops software. I will be assiting in this process of development as well as creating its website.</p>
+					</div>
+
+				</div>
+
+				<div class="col-sm-4 col-xs-12" style="height: 100%;">
+					<!-- Jumbotron -->
+					<div class="jumbotron one-third" id="my">
+						<h2>Alexloulou.com</h2>
 
 
-						<!-- Jumbotron -->
-						<div class="jumbotron one-third" id="my">
-							<h2>My Site</h2>
-							
-							
+						<p>This is my first website and I am building it to learn how to develop a site on my own.</p>
+						<div id="clockDisplay" style="color: white;"></div>
+					</div>
+				</div>
 
-							<p>This is my first website and I am building it to learn how to develop a site on my own.</p>
-							<p>Today's date is </p>
-						</div>
 
-						
+				<div class="col-sm-4 col-xs-12" style="height: 100%;">
+					<!-- Jumbotron -->
+					<div class="jumbotron one-third cover-bg" id="anaanu" >
+						<h2>Annanu.com</h2>
 
-						<!-- Jumbotron -->
-						<div class="jumbotron one-third cover-bg" id="anaanu" >
-							<h2>Annanu</h2>
-							
-							<p><a class="btn btn-lg btn-primary" href="http://anaanu.com" target="_blank" role="button">Welcome</a></p>
+						<p><a class="btn btn-lg btn-primary" href="http://anaanu.com" target="_blank" role="button">Welcome</a></p>
 
-							<p>I am working with a very smart peer of mine named Ganesh. His site Anaanu enables students to take advantage of your university's grade distribution information. With this resource, students can make more intelligent and informed decisions in which course to choose and more so with which professor. Whether you are looking for that easy “A” class or just trying to find the best professor for a particular course, look no further, Anaanu is the answer.</p>
-						</div>
-
+						<p>I am working with a very smart peer of mine named Ganesh. His site Anaanu enables students to take advantage of your university's grade distribution information. With this resource, students can make more intelligent and informed decisions in which course to choose and more so with which professor. Whether you are looking for that easy “A” class or just trying to find the best professor for a particular course, look no further, Anaanu is the answer.</p>
+					</div>
+				</div>
+			</div>
 
 		</section>
 
@@ -542,41 +622,224 @@
 
 		<!-- Contact Section -->
 		<section id="contact" class="contact-section">
-			
-						<h1 style="color: white;">Contact Me</h1>
-							<p>
-								Hi! Please feel free to contact me with any questions about anything. I will be glad to help you out with anything I can.
-							</p>
-								<div class="connect-wrapper">
-								<footer>
 
-									
-									<h2>
-										Connect With Me	
-									</h2>
-									<p style="color: black;">
-										Follow me to see updates, news, and glimpses into the life of an undergraduate student at Virginia Tech.
-									</p>
-									<ul class="social">
-				
-										<li><a href="https://www.facebook.com/profile.php?id=100007770737263" target="_blank"><i class="fa fa-facebook"></i></a></li>
+			<h1 style="color: white; border-top: solid white 2px; padding-top: 5px;">Contact Me</h1>
+			<p>
+				Hi! Have any questions? Get in Touch!
+			</p>
 
-										<li><a href="https://www.linkedin.com/in/alex-loulou-6b2a41120/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
 
-										<li><a href="https://www.instagram.com/aloulou17/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 
-										<li><a href="https://plus.google.com/u/0/103421757325793810670" target="_blank"><i class="fa fa-google-plus"></i></a></li>
-				
 
-									</ul>
+			<!-- Start Form -->
+			<div class="container" style="color: black;">
 
-								</footer>	
-								<footer class="second" >
-									
-										<p style="text-align: center; ">&copy; Alex Loulou 2017</p>
-								</footer>						
+				<form data-toggle="validator" role="form" class="well form-horizontal" action="" method="post"  id="contact_form">
+					<fieldset>
+
+						<!-- Form Name -->
+						<legend style="color: black;">Ask away!</legend>
+
+						<!-- Text input First name-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">First Name</label>  
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input  name="first_name" placeholder="First Name" class="form-control"  type="text" required="">
 								</div>
-				
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+						<!-- Text input Last name-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label" >Last Name</label> 
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+									<input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+						<!-- Text input email-->
+						<div class="form-group">
+							<label class="col-md-4 control-label">E-Mail</label>  
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+									<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+
+						<!-- Text input phone #-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Phone #</label>  
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+									<input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+						<!-- Text input address-->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Address</label>  
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+									<input name="address" placeholder="Address" class="form-control" type="text">
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+
+
+						<!-- Select Basic -->
+
+						<div class="form-group"> 
+							<label class="col-md-4 control-label">State</label>
+							<div class="col-md-4 selectContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+									<select name="state" class="form-control selectpicker" >
+										<option value=" " >Please select your state</option>
+										<option>Alabama</option>
+										<option>Alaska</option>
+										<option >Arizona</option>
+										<option >Arkansas</option>
+										<option >California</option>
+										<option >Colorado</option>
+										<option >Connecticut</option>
+										<option >Delaware</option>
+										<option >District of Columbia</option>
+										<option> Florida</option>
+										<option >Georgia</option>
+										<option >Hawaii</option>
+										<option >daho</option>
+										<option >Illinois</option>
+										<option >Indiana</option>
+										<option >Iowa</option>
+										<option> Kansas</option>
+										<option >Kentucky</option>
+										<option >Louisiana</option>
+										<option>Maine</option>
+										<option >Maryland</option>
+										<option> Mass</option>
+										<option >Michigan</option>
+										<option >Minnesota</option>
+										<option>Mississippi</option>
+										<option>Missouri</option>
+										<option>Montana</option>
+										<option>Nebraska</option>
+										<option>Nevada</option>
+										<option>New Hampshire</option>
+										<option>New Jersey</option>
+										<option>New Mexico</option>
+										<option>New York</option>
+										<option>North Carolina</option>
+										<option>North Dakota</option>
+										<option>Ohio</option>
+										<option>Oklahoma</option>
+										<option>Oregon</option>
+										<option>Pennsylvania</option>
+										<option>Rhode Island</option>
+										<option>South Carolina</option>
+										<option>South Dakota</option>
+										<option>Tennessee</option>
+										<option>Texas</option>
+										<option> Uttah</option>
+										<option>Vermont</option>
+										<option>Virginia</option>
+										<option >Washington</option>
+										<option >West Virginia</option>
+										<option>Wisconsin</option>
+										<option >Wyoming</option>
+									</select>
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+
+
+
+						<!-- Text area -->
+
+						<div class="form-group">
+							<label class="col-md-4 control-label">Your message</label>
+							<div class="col-md-4 inputGroupContainer">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+									<textarea class="form-control" name="comment" placeholder="Message"></textarea>
+								</div>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+
+						<!-- Success message -->
+						<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting me, I will get back to you shortly.</div>
+
+						<!-- Button -->
+						<div class="form-group">
+							<label class="col-md-4 control-label"></label>
+							<div class="col-md-4">
+								<button type="submit" id="submit" class="btn btn-default" >Send <span class="glyphicon glyphicon-send"></span></button>
+							</div>
+						</div>
+
+					</fieldset>
+				</form>
+			</div>
+			<!-- /.container -->
+
+
+			<!-- footer -->
+			<div class="container-fluid connect-wrapper">
+				<footer>
+
+
+					<h2>
+						Connect With Me	
+					</h2>
+					<p style="color: black;">
+						Follow me to see updates, news, and glimpses into the life of an undergraduate student at Virginia Tech.
+					</p>
+					<ul class="social">
+
+						<li><a href="https://www.facebook.com/profile.php?id=100007770737263" target="_blank"><i class="fa fa-facebook"></i></a></li>
+
+						<li><a href="https://www.linkedin.com/in/alex-loulou-6b2a41120/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+
+						<li><a href="mailto:loutwo17@vt.edu" target ="_blank"><i class="fa fa-envelope"></i></a></li>
+
+						<li><a href="https://www.instagram.com/aloulou17/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+						<li><a href="https://plus.google.com/u/0/103421757325793810670" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+
+
+					</ul>
+
+				</footer>	
+				<footer class="second" >
+
+					<p style="text-align: center; ">&copy; Alex Loulou 2017</p>
+				</footer>						
+			</div>
+			<!-- end footer -->
+
 		</section>
 
 
@@ -593,48 +856,70 @@
 
 		<a id="back-to-top" href="#" class="btn btn-default btn-sm back-to-top" role="button" title="Click to return to the top of the page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-arrow-up"></span></a>
 
-		<!-- jQuery -->
-		<script src="/static/jquery/jquery-3.2.1.min.js"></script>
 
-		<!-- Bootstrap Core JavaScript -->
-		<script src="/static/bootstrap/js/bootstrap.min.js"></script>
-
-		<!-- Scrolling Nav JavaScript -->
-		<script src="/static/js/jquery.easing.min.js"></script>
 
 		<script>
-			$(document).ready(function () {
-				$(window).scroll(function () {
-					if ($(".navbar").offset().top > 50) {
-						$(".navbar-fixed-top").addClass("top-nav-collapse");
-					} else {
-						$(".navbar-fixed-top").removeClass("top-nav-collapse");
-					}
-					if ($(this).scrollTop() > 50) {
-						$('#back-to-top').fadeIn();
-					} else {
-						$('#back-to-top').fadeOut();
-					}
-				});
-				$(document).on('click', 'a.page-scroll', function (event) {
-					var $anchor = $(this);
-					$('html, body').stop().animate({
-						scrollTop: $($anchor.attr('href')).offset().top
-					}, 1500, 'easeInOutExpo');
-					event.preventDefault();
-				});
-				$('#back-to-top').click(function () {
-					$('#back-to-top').tooltip('hide');
-					$(window).scrollTop(0);
-					$('html,body').animate({
-						scrollTop: 0
-					}, 800);
-					return false;
-				});
-				$('#back-to-top').tooltip();
-
+		$(document).ready(function () {
+			$(window).scroll(function () {
+				if ($(".navbar").offset().top > 50) {
+					$(".navbar-fixed-top").addClass("top-nav-collapse");
+				} else {
+					$(".navbar-fixed-top").removeClass("top-nav-collapse");
+				}
+				if ($(this).scrollTop() > 50) {
+					$('#back-to-top').fadeIn();
+				} else {
+					$('#back-to-top').fadeOut();
+				}
 			});
+			$(document).on('click', 'a.page-scroll', function (event) {
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1500, 'easeInOutExpo');
+				event.preventDefault();
+			});
+			$('#back-to-top').click(function () {
+				$('#back-to-top').tooltip('hide');
+				$(window).scrollTop(0);
+				$('html,body').animate({
+					scrollTop: 0
+				}, 800);
+				return false;
+			});
+			$('#back-to-top').tooltip();
+			$('#contact_form').validator();
+			renderTime();
+			$('#contact_form').validator().on('submit', function (e) {
+				
+				if (e.isDefaultPrevented()) {
+					// handle the invalid form...
+				} else {
+					e.preventDefault();
+					var fd = new FormData($('#contact_form')[0]);
+					$.ajax({
+						url: "/form",
+						data: fd,
+						cache: false,
+						processData: false,
+						contentType: false,
+						type: 'POST',
+						success: function (dataofconfirm) {
+							// do something with the result
+							$("#success_message").show();
+							$("#submit").hide();
+						}
+					});
+				}
+			});
+		});
 		</script>
+
+
+
+
+
+
 	</body>
 
 </html>
